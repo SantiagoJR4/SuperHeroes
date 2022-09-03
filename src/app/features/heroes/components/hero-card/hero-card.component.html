@@ -1,0 +1,10 @@
+<div class="card">
+	<img src="../../../{{ hero.img }}" class=" card-img-top" alt="...">
+
+	<div class="card-body">
+		<h5 class="card-title">{{ hero.name }}</h5>
+		<p class="card-text">{{ hero.bio }}.</p>
+		<p class="card-footer">First Appearance: {{ hero.appearance | date:'y' }}</p>
+		<a [routerLink]="['/heroes', hero.id]" class="btn btn-outline-primary">See more...</a>
+	</div>
+</div>

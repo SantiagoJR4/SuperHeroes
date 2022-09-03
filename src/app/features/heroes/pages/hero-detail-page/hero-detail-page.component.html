@@ -1,0 +1,10 @@
+<div class="row">
+	<img src="../../../{{ hero.img }}" class="col-4" alt="..." height="350">
+
+	<div class="col-7">
+		<h1>{{ hero.name | uppercase }}</h1>
+		<p><strong>Biography:</strong> {{ hero.bio }}.</p>
+		<p><strong>First Appearance:</strong> {{ hero.appearance | date:'y' }}</p>
+		<a routerLink="/heroes" class="btn btn-outline-primary">Return</a>
+	</div>
+</div>
